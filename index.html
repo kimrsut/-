@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お祭り人数カウントアプリ</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>お祭り人数カウント</h1>
+
+  <div class="total-box">
+    <p>合計人数</p>
+    <div id="total">0</div>
+  </div>
+
+  <div class="category">
+    <h2>大人</h2>
+    <div id="adult" class="number">0</div>
+    <button class="plus" onclick="addCount('adult')">+1</button>
+    <button class="minus" onclick="minusCount('adult')">-1</button>
+  </div>
+
+  <div class="category">
+    <h2>子ども</h2>
+    <div id="child" class="number">0</div>
+    <button class="plus" onclick="addCount('child')">+1</button>
+    <button class="minus" onclick="minusCount('child')">-1</button>
+  </div>
+
+  <div class="category">
+    <h2>高齢者</h2>
+    <div id="staff" class="number">0</div>
+    <button class="plus" onclick="addCount('staff')">+1</button>
+    <button class="minus" onclick="minusCount('staff')">-1</button>
+  </div>
+
+  <button class="reset" onclick="resetAll()">すべてリセット</button>
+　<button class="csv" onclick="downloadCSV()">CSV出力</button>
+  <div class="chart-box">
+    <h2>来場者数の変化</h2>
+    <canvas id="visitorChart"></canvas>
+  </div>
+
+  <!-- グラフを作るためのChart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- 自分で書くJavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>

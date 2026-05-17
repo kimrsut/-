@@ -1,0 +1,144 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+}
+
+.total-box {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+#total {
+  font-size: 56px;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.category {
+  background-color: white;
+  margin: 15px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.category h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.number {
+  font-size: 44px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+button {
+  font-size: 22px;
+  padding: 14px 24px;
+  margin: 6px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  min-width: 90px;
+}
+
+.plus {
+  background-color: #3498db;
+}
+
+.minus {
+  background-color: #e74c3c;
+}
+
+.reset {
+  background-color: #555;
+  margin-top: 20px;
+}
+
+.csv {
+  background-color: #27ae60;
+  margin-top: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.chart-box {
+  background-color: white;
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* グラフの高さを確保 */
+.chart-box canvas {
+  width: 100% !important;
+  max-height: 400px;
+}
+
+/* スマホ用の調整 */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .total-box,
+  .category,
+  .chart-box {
+    width: 95%;
+    padding: 16px;
+  }
+
+  #total {
+    font-size: 52px;
+  }
+
+  .number {
+    font-size: 42px;
+  }
+
+  button {
+    font-size: 22px;
+    padding: 16px 20px;
+    width: 42%;
+    max-width: 160px;
+  }
+
+  .reset,
+  .csv {
+    width: 90%;
+    max-width: 350px;
+    display: block;
+    margin: 12px auto;
+  }
+
+  .chart-box {
+    padding: 12px;
+  }
+}
